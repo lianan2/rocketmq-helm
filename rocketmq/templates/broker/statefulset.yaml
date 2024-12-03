@@ -131,15 +131,12 @@ spec:
         {{- end }}
         ports:
         - containerPort: 10909
-          hostPort: 10909
           name: vip
           protocol: TCP
         - containerPort: 10911
-          hostPort: 10911
           name: main
           protocol: TCP
         - containerPort: 10912
-          hostPort: 10912
           name: ha
           protocol: TCP
         {{- with $.Values.broker.readinessProbe }}

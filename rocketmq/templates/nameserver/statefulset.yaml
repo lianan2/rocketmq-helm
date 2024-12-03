@@ -98,7 +98,6 @@ spec:
         {{- end }}
         ports:
         - containerPort: 9876
-          hostPort: 9876
           name: main
           protocol: TCP
         {{- with .readinessProbe }}

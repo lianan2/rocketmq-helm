@@ -98,11 +98,11 @@ spec:
         ports:
         - name: main
           containerPort: 8080
-          hostPort: 28080
+          hostPort: 18080
           protocol: TCP
         - name: grpc
           containerPort: 8081
-          hostPort: 28081
+          hostPort: 18081
           protocol: TCP
         {{- with .readinessProbe }}
         readinessProbe:
