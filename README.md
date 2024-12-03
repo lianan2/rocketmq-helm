@@ -12,6 +12,16 @@ http://{ADDRESS}:38080/
 
 连接rocketmq:  
 ```
-地址 {ADDRESS}:9876  
-账号 user01/user01
+http连接地址 {ADDRESS}:18080
+grpc连接地址 {ADDRESS}:18081
+accessKey: ak8w4nbqnwe88d649c50c1c
+secretKey: skd685a32c7665c4cc
+```
+
+测试链接：
+```
+$ grpcurl -plaintext {ADDRESS}:18081 list
+apache.rocketmq.v2.MessagingService
+grpc.channelz.v1.Channelz
+grpc.reflection.v1alpha.ServerReflection
 ```
